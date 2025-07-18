@@ -9,6 +9,8 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import { BrowserRouter } from 'react-router-dom';
 import { AppContextProvider } from './contexts/AppContext.jsx';
 
+
+
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
      <AppContextProvider>
@@ -16,4 +18,5 @@ createRoot(document.getElementById('root')).render(
      </AppContextProvider>
     
   </BrowserRouter>,
+  
 )

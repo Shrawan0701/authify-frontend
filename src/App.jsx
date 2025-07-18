@@ -5,7 +5,6 @@ import Login from './pages/Login.jsx';
 import { ToastContainer } from 'react-toastify';
 import { Route, Routes } from 'react-router-dom';
 
-import { Analytics } from '@vercel/analytics/react';
 
 const App = () => {
   return (
@@ -17,7 +16,7 @@ const App = () => {
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/login" element={<Login />} />
 
-        <Analytics />
+       
       </Routes>
     </div>
   ) 
