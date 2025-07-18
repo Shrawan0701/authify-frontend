@@ -16,7 +16,7 @@ Experience Authify in action:
 * **Frontend Application:** [https://authify-frontend.vercel.app](https://authify-frontend.vercel.app)
 * **Backend API Base URL:** [https://authify-backend-lei1.onrender.com/api/v1.0](https://authify-backend-lei1.onrender.com/api/v1.0)
 
-  This is the base URL for API endpoints. You will see an "Unauthorized" message when visiting directly, which is expected for a secured API.
+ **Note on Backend:** The backend may take a moment to load on the first visit after a period of inactivity.
   
 
 ##  Features
