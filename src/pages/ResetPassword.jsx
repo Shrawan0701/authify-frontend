@@ -97,7 +97,7 @@ const ResetPassword = () => {
     setLoading(true);
     try {
       
-      const response = await axios.post(backendURL + "/verify-otp", {
+      const response = await axios.post(backendURL + "/verify-reset-otp", {
         email: email, 
         otp: enteredOtp,
       });
