@@ -1,12 +1,68 @@
-# React + Vite
+# Authify: Full-Stack Authentication System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+##  Architecture
 
-Currently, two official plugins are available:
+Authify is built on a **Client-Server Architecture** specifically as a **Single-Page Application (SPA) with a RESTful API Backend**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* The **Frontend (React.js)** acts as a decoupled client, handling all UI rendering and client-side routing.
+* The **Backend (Spring Boot)** exposes a comprehensive set of RESTful APIs, handling business logic, data and all security aspects (authentication, authorization).
+* Communication between the frontend and backend occurs exclusively via **HTTP requests** (JSON payload) to the REST API endpoints.
+* The two components are deployed independently, showcasing a modern, modular approach to full-stack development.
 
-## Expanding the ESLint configuration
+##  Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Experience Authify in action:
+
+* **Frontend Application:** [https://authify-frontend.vercel.app](https://authify-frontend.vercel.app)
+* **Backend API Base URL:** [https://authify-backend-lei1.onrender.com/api/v1.0](https://authify-backend-lei1.onrender.com/api/v1.0)
+
+  This is the base URL for API endpoints. You will see an "Unauthorized" message when visiting directly, which is expected for a secured API.
+  
+
+##  Features
+
+* **User Registration (Sign Up):** Securely create new user accounts.
+* **User Login:** Authenticate users with JWT (JSON Web Tokens) for secure session management.
+* **Authentication Persistence:** Maintain user login status across page refreshes using HttpOnly.
+* **Email Verification (OTP):** OTP-based email verification for new registrations.
+* **Password Reset (OTP):** Securely reset forgotten passwords via OTP sent to registered email.
+* **User Logout:** Securely terminate user sessions.
+* **Responsive UI:** Adapts seamlessly across various devices using Bootstrap.
+* **Error Handling:** Clear and informative messages for both API and UI errors.
+
+## 💻 Tech Stack
+
+### Frontend
+
+* **React.js:** JavaScript library for building user interfaces.
+* **Vite:** Fast frontend build tool.
+* **JavaScript (ES6+):** Programming language.
+* **Bootstrap:** Responsive CSS framework.
+* **React Router DOM:** For client-side routing.
+* **Axios:** Promise-based HTTP client for API requests.
+* **React Toastify:** For elegant notification messages.
+
+### Backend
+
+* **Java:** Programming language.
+* **Spring Boot:** Framework for building robust, stand-alone, production-grade Spring applications.
+* **Spring Security:** Comprehensive security for authentication and authorization.
+* **Spring Data JPA & Hibernate:** For ORM (Object-Relational Mapping) and database interaction.
+* **Maven:** Dependency management and build automation tool.
+* **Lombok:** Reduces boilerplate code.
+* **jjwt:** Java JWT library for token generation and validation.
+* **Jakarta Mail (via Brevo):** For sending transactional emails.
+
+### Database
+
+* **MySQL:** Relational database management system.
+* **Railway.app:** Cloud-hosted managed MySQL service (used for production database).
+
+### Deployment
+
+* **Vercel:** Platform for deploying frontend applications (used for React app).
+* **Render:** Cloud platform for deploying web services (used for Spring Boot backend).
+
+
+
+
