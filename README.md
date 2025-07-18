@@ -63,6 +63,13 @@ Experience Authify in action:
 * **Vercel:** Platform for deploying frontend applications (used for React app).
 * **Render:** Cloud platform for deploying web services (used for Spring Boot backend).
 
+### Contact
+Feel free to connect or reach out if you have questions about this project!
+
+Email: shrawanrw07@gmail.com
+
+LinkedIn Profile: https://www.linkedin.com/in/shrawanwandhekar/
+
 
 
 
